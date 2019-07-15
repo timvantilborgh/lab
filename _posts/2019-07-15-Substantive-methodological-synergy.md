@@ -1,5 +1,9 @@
-# Why do we all use the same methods in Work and Organizational Psychology?
-*by Tim Vantilborgh, Vrije Universiteit Brussel, Belgium*
+---
+title: Why do we all use the same methods in Work and Organizational Psychology?
+author: [Tim Vantilborgh]
+categories: [conferences, open science, research methods]
+background: https://images.unsplash.com/photo-1458040937381-49c067dfd49a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+---
 
 > “Oh god no... not another moderated mediation model”
 
