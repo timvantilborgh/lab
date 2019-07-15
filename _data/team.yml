@@ -5,11 +5,10 @@
   image: assets/images/Tim_sq.png # Can be external link
   description: > # Can be Markdown
     Protagonist, from the 20th century. Many times great-uncle to Professor Hubert Farnsworth.
-  orcid: 0000-0000-0000-0000
-  email: tim.vantilborgh@vb.be
+  orcid: 0000-0002-5763-3111
+  email: tim.vantilborgh@vub.be
   github: timvantilborgh
   twitter: TimVantilborgh
-  researchgate: https://www.researchgate.net/profile/Tim_Vantilborgh
 
 - name: Safaa Achnak
   role: PhD student
