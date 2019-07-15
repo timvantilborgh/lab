@@ -2,7 +2,7 @@
 
 - name: Tim Vantilborgh
   role: Associate professor # Will appear next to name
-  image: assets/img/Tim_sq.png # Can be external link
+  image: assets/images/Tim_sq.png # Can be external link
   description: > # Can be Markdown
     Protagonist, from the 20th century. Many times great-uncle to Professor Hubert Farnsworth.
   orcid: 0000-0000-0000-0000
