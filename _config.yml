@@ -15,3 +15,13 @@ github_username: timvantilborgh
 posts_on_home: 3                        # Show x number of latest posts on homepage, can be 0
 tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
 archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
+
+# FRONTMATTER DEFAULTS
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/blog/:slug/"         # Define permalinks for all posts
+      
