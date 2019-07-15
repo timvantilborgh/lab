@@ -3,4 +3,9 @@ title: Lab publications
 permalink: /publications/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a luctus nunc. Donec laoreet odio sed tellus tristique efficitur. In hac habitasse platea dictumst. Quisque pulvinar sollicitudin erat in posuere. Pellentesque in nulla at velit sollicitudin aliquam. Etiam mattis nunc et odio blandit, quis tristique lorem pellentesque. Morbi sit amet egestas justo. Quisque molestie suscipit rutrum. Sed quis cursus leo, quis convallis ante. Etiam et cursus nisi.
+To see the publications of the various lab members, please click on the links below.
+
+# Publications
+
+- Tim Vantilborgh: [publications](https://cris.vub.be/en/persons/tim-vantilborgh(33bee92e-6522-4fab-8d10-ee55fc280514)/publications.html)
+- Safaa Achnak: [publications](https://cris.vub.be/en/persons/safaa-achnak(cee4c98f-5c7d-451b-9108-00cc8d846267)/publications.html)
