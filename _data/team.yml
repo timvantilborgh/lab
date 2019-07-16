@@ -4,7 +4,11 @@
   role: Associate professor # Will appear next to name
   image: assets/images/Tim_sq.png # Can be external link
   description: > # Can be Markdown
-    Protagonist, from the 20th century. Many times great-uncle to Professor Hubert Farnsworth.
+    Tim received his PhD in 2012 at the Vrije Universiteit Brussel with a dissertation focusing on the psychological contracts of volunteers. In 2014, he started working as
+    Assistant Professor in a tenure track at the Vrije Universiteit Brussel. In 2019, he became a tenured Associate Professor in the same university. Tim is the lead investigator
+    of the lab. His research interests are psychological contracts, dynamics of phenomena in the workplace, personality, emotions, stress, and research methods. To learn more 
+    about Tim's work, you can take a look at his personal webpage [here](https://wops.research.vub.be/nl/prof-dr-tim-vantilborgh-1/) or his [ResearchGate page](https://www.researchgate.net/profile/Tim_Vantilborgh). Tim teaches Research Methods I and II, as well 
+    as Qualitative Research Methods for Psychology at the faculty of Psychology and Educational Sciences. 
   orcid: 0000-0002-5763-3111
   email: tim.vantilborgh@vub.be
   github: timvantilborgh
@@ -38,4 +42,9 @@
     Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
     aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
 
-
+- name: Mohsen Yaghoubi
+  role: Visiting PhD student
+  image: assets/img/leela_artem-kovalev-1403404-unsplash.jpg
+  description: >
+    Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
+    aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
