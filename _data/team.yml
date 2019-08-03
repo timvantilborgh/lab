@@ -16,21 +16,23 @@
 
 - name: Safaa Achnak
   role: PhD student
-  image: assets/img/leela_artem-kovalev-1403404-unsplash.jpg
+  image: assets/images/no_image.png
   description: >
-    Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
-    aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
+    Safaa obtained her Master's degree in Psychology at the Vrije Universiteit Brussel in 2015. 
+    She started her PhD in 2016 funded by an FWO grant (). 
+    In her PhD, Safaa investigates the effects of psychological contract breach perceptions on the development of stress and burnout over time.
+  email: sachnak.vub.be
     
 - name: Yang Yang
   role: PhD student
-  image: assets/img/leela_artem-kovalev-1403404-unsplash.jpg
+  image: assets/images/no_image.png
   description: >
     Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
     aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
 
 - name: Jiahong Du
   role: PhD student
-  image: assets/img/leela_artem-kovalev-1403404-unsplash.jpg
+  image: assets/images/no_image.png
   description: >
     Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
     aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
@@ -46,7 +48,7 @@
 
 - name: Mohsen Yaghoubi
   role: Visiting PhD student
-  image: assets/img/leela_artem-kovalev-1403404-unsplash.jpg
+  image: assets/images/no_image.png
   description: >
     Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
     aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
