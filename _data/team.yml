@@ -25,7 +25,7 @@
     
 - name: Yang Yang
   role: PhD student
-  image: assets/images/no_image.png
+  image: assets/images/yang_sq.png
   description: >
     Yang Yang obtained her Master's degree in Psychology at the Katholieke Universiteit Leuven in 2016.
     She started her PhD in 2016 in our lab.
@@ -34,7 +34,7 @@
 
 - name: Jiahong Du
   role: PhD student
-  image: assets/images/no_image.png
+  image: assets/images/jiahong_sq.png
   description: >
     Jiahong Du obtained her Master's degree in .
 
