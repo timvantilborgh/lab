@@ -37,10 +37,12 @@
 
 - name: Juul Vossen
   role: PhD student
-  image: assets/img/leela_artem-kovalev-1403404-unsplash.jpg
+  image: assets/img/juul.jpg
   description: >
-    Mutant cyclops. Leela is spaceship captain, pilot, and head of all 
-    aviation services on board the [Planet Express Ship](https://en.wikipedia.org/wiki/Planet_Express_Ship). 
+    Juul obtained a Master's degree in Psychology at the Vrije Universiteit Brussel in 2018. 
+    After working in our research unit---Work and Organizational Psychology---for several months, he started his PhD, which is funded by FWO (G027519N), entitled "Psychological contracts as complex dynamic networks: Introducing the iPC-networks model" in 2019. 
+    His PhD research is supervised by Prof. Tim Vantilborgh. In his research, Juul adopts a new perspective to studying psychological contracts as dynamic networks that model the ongoing exchanges of employer inducements for employee contributions.
+   email: juul.vossen@vub.be
 
 - name: Mohsen Yaghoubi
   role: Visiting PhD student

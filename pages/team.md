@@ -4,4 +4,4 @@ permalink: /team/
 layout: team
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a luctus nunc. Donec laoreet odio sed tellus tristique efficitur. In hac habitasse platea dictumst. Quisque pulvinar sollicitudin erat in posuere. Pellentesque in nulla at velit sollicitudin aliquam. Etiam mattis nunc et odio blandit, quis tristique lorem pellentesque. Morbi sit amet egestas justo. Quisque molestie suscipit rutrum. Sed quis cursus leo, quis convallis ante. Etiam et cursus nisi.
+Welcome to the lab members page. You can find all present and past members of the lab here.
