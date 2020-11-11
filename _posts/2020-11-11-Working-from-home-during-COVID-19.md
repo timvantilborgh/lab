@@ -5,6 +5,7 @@ categories: [covid-19, evidence-based management]
 background: https://images.unsplash.com/photo-1584036533827-45bce166ad94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80
 ---
 
+
 This is a summary of the full report, which can be downloaded from: [https://osf.io/9nxqv/](https://osf.io/9nxqv/)
 
 Late October 2020, working from home became the norm again in Belgium to contain the spread of COVID-19. However, these measures require far-reaching efforts from both employees and employers and may have an impact on an individual, organizational and societal level. To sustain these measures, we need to look beyond the economic and health parameters. Work - and organizational psychological insights can help us to understand the challenges associated with working from home and inform evidence-based management practices.
