@@ -1,5 +1,5 @@
 ---
-title: Working from home during COVID-19: Challenges and recommendations 
+title: Working from home during COVID-19 - Challenges and recommendations 
 author: [Tim Vantilborgh]
 categories: [covid-19, evidence-based management]
 background: https://images.unsplash.com/photo-1584036533827-45bce166ad94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80
