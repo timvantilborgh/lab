@@ -1,5 +1,5 @@
 ---
-title: A more intuitive approach to effect sizes: Persons as effect sizes
+title: A more intuitive approach to effect sizes - Persons as effect sizes
 author: [Tim Vantilborgh]
 categories: [research methods]
 background: https://images.unsplash.com/photo-1513682121497-80211f36a7d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80
