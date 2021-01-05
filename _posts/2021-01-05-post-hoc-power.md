@@ -14,7 +14,9 @@ In this article, they explain how you can easily estimate post-hoc power by calc
 1. You can use non-parametric bootstrapping and record for each bootstrap whether an effect was significant (1) or not (0), after which you calculate the percentage of significant effects accross all bootstrapped samples.
 2. You can take the *t* or *z* value of your test, and calculate the cumulative probability directly. The formula for the *t* value is best used when sample sizes are small, but with samples of 100 observations or more you can use the formula for the *z* value.  In R, this formula based on the *z* value is simply:
 
-> 1-pnorm(1.96-abs(X))
+```
+1-pnorm(1.96-abs(X))
+```
 
 with X being the *t* or *z* value that is associated with your effect.
 
@@ -26,28 +28,30 @@ Bliese and Wang (2020) demonstrate how to use this approach in R, but this appro
 
 I then estimated a structural equation model using the following code (see example.inp):
 
-> TITLE: Demonstration post-hoc power
-> 
-> DATA:
-> FILE = "dataset.txt";
-> 
-> VARIABLE:
-> NAMES = fulf1 fulf2 viol1 viol2 viol3 viol4 
-> trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
-> USEV = fulf1 fulf2 viol1 viol2 viol3 viol4 trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
-> 
-> ANALYSIS:
-> 
-> MODEL:
-> fulfilment by fulf1 fulf2;
-> violation by viol1 viol2 viol3 viol4;
-> trust by trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
-> 
-> trust on violation fulfilment;
-> violation on fulfilment;
-> 
-> OUTPUT:
-> sampstat;
+```
+TITLE: Demonstration post-hoc power
+
+DATA:
+FILE = "dataset.txt";
+
+VARIABLE:
+NAMES = fulf1 fulf2 viol1 viol2 viol3 viol4 
+trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
+USEV = fulf1 fulf2 viol1 viol2 viol3 viol4 trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
+
+ANALYSIS:
+
+MODEL:
+fulfilment by fulf1 fulf2;
+violation by viol1 viol2 viol3 viol4;
+trust by trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
+
+trust on violation fulfilment;
+violation on fulfilment;
+
+OUTPUT:
+sampstat;
+```
 
 If you are familiar with Mplus, you will notice that this is a mediation model with three latent variables. The output file gives a lot of information (see example.out), but I will jump to what is probably the most important section, namely the effects of fulfilment on feelings of violation and trust and the effect of feelings of violation on trust.
 
@@ -62,9 +66,11 @@ TRUST    ON
 
 The first number in each line is the parameter estimate, the second number is the standard error, the third number of the ratio of the parameter estimate and the standard error (i.e., a *z* value), and the final number is the *p*-value. We will take these *z* values and use them in our formula (see R script example.R):
 
-> 1-pnorm(1.96-abs(1.912)) # Cumulative probability of violation on trust
-> 1-pnorm(1.96-abs(-1.005)) # Cumulative probability of fulfilment on trust
-> 1-pnorm(1.96-abs(-4.869)) # Cumulative probability of fulfilment on violation
+```
+1-pnorm(1.96-abs(1.912)) # Cumulative probability of violation on trust
+1-pnorm(1.96-abs(-1.005)) # Cumulative probability of fulfilment on trust
+1-pnorm(1.96-abs(-4.869)) # Cumulative probability of fulfilment on violation
+```
 
 We would find the following results:
 
