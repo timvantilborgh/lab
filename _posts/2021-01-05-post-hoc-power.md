@@ -51,12 +51,14 @@ I then estimated a structural equation model using the following code (see examp
 
 If you are familiar with Mplus, you will notice that this is a mediation model with three latent variables. The output file gives a lot of information (see example.out), but I will jump to what is probably the most important section, namely the effects of fulfilment on feelings of violation and trust and the effect of feelings of violation on trust.
 
->  TRUST    ON
->     VIOLATION          0.397      0.208      1.912      0.056
->     FULFILMENT        -0.155      0.155     -1.005      0.315
-> 
->  VIOLATIO ON
->     FULFILMENT        -0.260      0.053     -4.869      0.000
+```
+TRUST    ON
+    VIOLATION          0.397      0.208      1.912      0.056
+    FULFILMENT        -0.155      0.155     -1.005      0.315
+
+ VIOLATIO ON
+    FULFILMENT        -0.260      0.053     -4.869      0.000
+```
 
 The first number in each line is the parameter estimate, the second number is the standard error, the third number of the ratio of the parameter estimate and the standard error (i.e., a *z* value), and the final number is the *p*-value. We will take these *z* values and use them in our formula (see R script example.R):
 
