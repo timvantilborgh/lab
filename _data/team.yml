@@ -15,28 +15,20 @@
   twitter: TimVantilborgh
 
 - name: Safaa Achnak
-  role: PhD student
+  role: Post-Doctoral researcher
   image: assets/images/no_image.png
   description: >
     Safaa obtained her Master's degree in Psychology at the Vrije Universiteit Brussel in 2015. 
-    She started her PhD in 2016 funded by an FWO grant (). 
-    In her PhD, Safaa investigates the effects of psychological contract breach perceptions on the development of stress and burnout over time. Her PhD is supervised by Prof. Tim Vantilborgh.
+    She started her PhD in 2016 funded by an FWO grant and obtained her PhD in 2021. 
+    In her PhD, Safaa investigated the effects of psychological contract breach perceptions on the development of stress and burnout over time. Her PhD was supervised by Prof. Tim Vantilborgh.
   email: sachnak.vub.be
-    
-- name: Yang Yang
-  role: PhD student
-  image: assets/images/yang_sq.png
-  description: >
-    Yang Yang obtained her Master's degree in Psychology at the Katholieke Universiteit Leuven in 2016.
-    She started her PhD in 2016 in our lab.
-    In her PhD, Yang Yang examines the dynamics of psychological contract over-fulfilment. Her PhD is supervised by Prof. Tim Vantilborgh.
-  email: yyang@vub.be
 
-- name: Jiahong Du
-  role: PhD student
-  image: assets/images/jiahong_sq.png
+  - name: Jesse Vullinghs
+  role: Post-Doctoral researcher
+  image: assets/images/no_image.png
   description: >
-    Jiahong Du obtained her Master's degree in .
+    To be added.
+  email: sachnak.vub.be
 
 - name: Juul Vossen
   role: PhD student
@@ -47,9 +39,25 @@
     His PhD research is supervised by Prof. Tim Vantilborgh. In his research, Juul adopts a new perspective to studying psychological contracts as dynamic networks that model the ongoing exchanges of employer inducements for employee contributions.
   email: juul.vossen@vub.be
 
+- name: Yang Yang
+  role: Former PhD student
+  image: assets/images/yang_sq.png
+  description: >
+    Yang Yang obtained her Master's degree in Psychology at the Katholieke Universiteit Leuven in 2016.
+    She started her PhD in 2016 in our lab.
+    In her PhD, Yang Yang examines the dynamics of psychological contract over-fulfilment. Her PhD is supervised by Prof. Tim Vantilborgh.
+    Yang Yang completed her PhD in 2021.
+  email: yyang@vub.be
+
+- name: Jiahong Du
+  role: Former PhD student
+  image: assets/images/jiahong_sq.png
+  description: >
+    Jiahong Du completed her PhD on the role of culture in psychological contracts in 2021.
+
 - name: Mohsen Yaghoubi
   role: Visiting PhD student
   image: assets/images/no_image.png
   description: >
     Mohsen Yaghoubi obtained his Master's degree of Art in Public Administration in 2014 from the University of Sistan and Baluchestan in Iran. 
-    He currently pursues his PhD at the University of Sistan and Baluchestan. He is visiting our lab for 6 months in 2019.
+    He currently pursues his PhD at the University of Sistan and Baluchestan. He visited our lab for 6 months in 2019.

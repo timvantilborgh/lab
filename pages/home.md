@@ -12,9 +12,9 @@ Our lab focuses on studying dynamic processes at the workplace, with a specific 
 
 If you wish to know more about our research, some recent key publications are:
 
+- Solinger, O.N., Joireman, J., Vantilborgh, T., & Bailliet, D.P. (2021). Change in unit-level job attitudes following strategic interventions: A meta-analysis of longitudinal studies. *Journal of Organizational Behavior, Early View.* https://doi.org/10.1002/job.2523
+- Achnak, S., Schippers, A., & Vantilborgh, T. (2021). To deny, to justify, or to apologize: Do social accounts influence stress levels in the aftermath of psychological contract breach? *BMC Psychology, 9*(1), 1-18.
 - Yang, Y., Griep, Y., & Vantilborgh, T. (2020). Exploring temporal changes in obligated and delivered inducements: a dynamic systems perspective. *European Journal of Work and Organizational Psychology, 29*(2), 183-199.
 - Vantilborgh, T., Hofmans, J., & Judge, T.A. (2018). The time has come to study dynamics at work. *Journal of Organizational Behavior, 39*(9), 1045-1049.
-- Achnak, S., Griep, Y., & Vantilborgh, T. (2018). I Am So Tired… How Fatigue May Exacerbate Stress Reactions to Psychological Contract Breach. *Frontiers in Psychology, 9*. https://doi.org/10.3389/fpsyg.2018.00231
 - Vantilborgh, T. (2019). *Emerging, crystalizing, and changing psychological contracts over time: Introducing the iPC-network model*. In G. Cooper & Y. Griep, Handbook of research on the psychological contract at work. London: Palgrave.
-- Vantilborgh, T., Bidee, J., Pepermans, R., Griep, Y., & Hofmans, J. (2016). Antecedents of Psychological Contract Breach: The Role of Job Demands, Job Resources, and Affect. *PLOS ONE, 11*(5), e0154696. https://doi.org/10.1371/journal.pone.0154696
 
