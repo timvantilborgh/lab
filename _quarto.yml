@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Prof. Tim Vantilborgh"
+  description: "This is Tim Vantilborgh's personal website and blog. It is also the home of e.videns, a data-science consultancy service."
+  navbar:
+    right:
+      - text: Blog
+        href: blog.qmd
+      - icon: github
+        href: https://github.com/timvantilborgh
+      - icon: twitter
+        href: https://x.com/TimVantilborgh
+format:
+  html:
+    theme: simplex
+    css: styles.css
+
+
+

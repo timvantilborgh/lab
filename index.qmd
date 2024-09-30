@@ -1,0 +1,45 @@
+---
+title: "About"
+about:
+  template: trestles
+  image: tim.jpg
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+Tim Vantilborgh is Full Professor at the Vrije Universiteit Brussel. 
+He works in the Faculty of Psychology and Educational Sciences, where he is a member of the Work and Organizational Psychology research unit.
+He also works as an independent data science consultant as founder of e.videns.
+
+### Research
+
+My research focuses on two main topics: psychological contracts and employee wellbeing. 
+Moreover, I am interested in understanding workplace phenomena better by adopting a temporal lens and by integrating a dynamic systems perspective.
+
+### Teaching
+
+I teach courses to students in the Bachelor and Master of Psychology programs at the Vrije Universiteit Brussel:
+
+-   Research Methods and Techniques I: Psychometrics
+-   Research Methods and Techniques II: Quantitative Methods
+-   Evidence-based Human Resources Management
+-   Case studies evidence-based Human Resources Management
+
+### Education
+
+-   Vrije Universiteit Brussel | Brussels, Belgium | PhD in Industrial & Organizational Psychology | 2008-2012
+-   Vrije Universiteit Brussel | Brussels, Belgium | Master in Industrial & Organizational Psychology | 2005-2007
+-   Vrije Universiteit Brussel | Brussels, Belgium | Bachelor in Psychology | 2002-2005
+
+## Contact
+
+-   Email: tim.vantilborgh@vub.be
