@@ -7,20 +7,6 @@
     "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 23, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 20, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About",
@@ -33,5 +19,54 @@
     "title": "About",
     "section": "Contact",
     "text": "Contact\n\nEmail: tim.vantilborgh@vub.be"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "evidens.html",
+    "href": "evidens.html",
+    "title": "e.videns data science consultancy",
+    "section": "",
+    "text": "As a researcher, I have a lot of experience in collecting, analyzing, and interpreting data. I can help you with a variety of data-related tasks, including:\n\nDeveloping and testing surveys\nRunning statistical analyses\nBuilding predictive models\nRunning segmentation analyses\nGiving advice on how to run a survey study\n\nMy expertise lies in the field of organizational behavior, but I am open to working on projects in other fields as well. In partilcular, I have experience with the following statistical techniques and methodological designs:\n\nStructural equation modeling\nHierarchical linear modeling\nLatent class analysis\nNetwork analysis\nMachine learning\nMultilevel models\nPsychometric analyses\nExperimental designs\nLongitudinal designs\nExperience sampling designs"
+  },
+  {
+    "objectID": "evidens.html#what-do-i-do",
+    "href": "evidens.html#what-do-i-do",
+    "title": "e.videns data science consultancy",
+    "section": "",
+    "text": "As a researcher, I have a lot of experience in collecting, analyzing, and interpreting data. I can help you with a variety of data-related tasks, including:\n\nDeveloping and testing surveys\nRunning statistical analyses\nBuilding predictive models\nRunning segmentation analyses\nGiving advice on how to run a survey study\n\nMy expertise lies in the field of organizational behavior, but I am open to working on projects in other fields as well. In partilcular, I have experience with the following statistical techniques and methodological designs:\n\nStructural equation modeling\nHierarchical linear modeling\nLatent class analysis\nNetwork analysis\nMachine learning\nMultilevel models\nPsychometric analyses\nExperimental designs\nLongitudinal designs\nExperience sampling designs"
+  },
+  {
+    "objectID": "evidens.html#examples-of-my-work",
+    "href": "evidens.html#examples-of-my-work",
+    "title": "e.videns data science consultancy",
+    "section": "Examples of my work",
+    "text": "Examples of my work\nIn the past, I have worked on a variety of projects, including:\n\nDeveloping and testing an instrument to measure employee engagement\nDeveloping, running, and analyzing a survey on well-being of employees\nRunning segmentation analysis to identify different types of clients and building a predictive model using machine learning to predict segment membership for new clients"
+  },
+  {
+    "objectID": "evidens.html#rates",
+    "href": "evidens.html#rates",
+    "title": "e.videns data science consultancy",
+    "section": "Rates",
+    "text": "Rates\nI work with a fixed rate. The intake meeting is free of charge. Subsequently, I will provide you with a quote based on the complexity of the project and the number of hours I expect to spend on it."
+  },
+  {
+    "objectID": "evidens.html#contact-us",
+    "href": "evidens.html#contact-us",
+    "title": "e.videns data science consultancy",
+    "section": "Contact us",
+    "text": "Contact us\nFor more information, please contact us at tim.vantilborgh@vub.be."
   }
 ]
