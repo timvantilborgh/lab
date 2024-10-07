@@ -2,6 +2,10 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/210105-post-hoc-power/210105-post.html",
+      "/posts/201215-VUB-theme-xaringan/201215-post.html",
+      "/posts/201111-working-from-home-covid/201111-post.html",
+      "/posts/201201-persons-as-effect-sizes/201201-post.html",
       "/posts/191024-mini-open-science-fair/191024-post.html",
       "/posts/190715-substantive-methodological-fit/190715-post.html"
     ]

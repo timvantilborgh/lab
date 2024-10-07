@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tim Vantilborgh">
+<meta name="dcterms.date" content="2021-01-05">
+<meta name="description" content="A short tutorial on post-hoc power analysis">
 
-<title>Prof.&nbsp;Tim Vantilborgh</title>
+<title>Prof.&nbsp;Tim Vantilborgh - Post-hoc power analysis using cumulative probabilities of finding significance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Prof.&nbsp;Tim Vantilborgh</span>
     </a>
   </div>
@@ -149,11 +92,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./evidens.html"> 
+    <a class="nav-link" href="../../evidens.html"> 
 <span class="menu-text">e.videns</span></a>
   </li>  
   <li class="nav-item compact">
@@ -174,231 +117,114 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="conferences">conferences <span class="quarto-category-count">(2)</span></div><div class="category" data-category="covid-19">covid-19 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="evidence-based management">evidence-based management <span class="quarto-category-count">(1)</span></div><div class="category" data-category="open science">open science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="presentations">presentations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="research methods">research methods <span class="quarto-category-count">(3)</span></div></div></div>
-<!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
     </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Post-hoc power analysis using cumulative probabilities of finding significance</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">research methods</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A short tutorial on post-hoc power analysis
+  </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="research methods" data-listing-date-sort="1609801200000" data-listing-file-modified-sort="1728284627681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="975">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external">Post-hoc power analysis using cumulative probabilities of finding significance</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research methods'); return false;">
-research methods
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external">A short tutorial on post-hoc power analysis</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external">
-<div class="listing-date">
-Jan 5, 2021
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="presentations" data-listing-date-sort="1607986800000" data-listing-file-modified-sort="1728284472427" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external">A VUB theme for xaringan presentations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('presentations'); return false;">
-presentations
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external">For those who would like to create Xaringan slides with a VUB theme</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external">
-<div class="listing-date">
-Dec 15, 2020
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="covid-19,evidence-based management" data-listing-date-sort="1605049200000" data-listing-file-modified-sort="1728284155138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1032">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external">Working from home during COVID-19 - Challenges and recommendations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('covid-19'); return false;">
-covid-19
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('evidence-based management'); return false;">
-evidence-based management
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external">A summary of our report on working from home during the COVID-19 pandemic</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2020
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="research methods" data-listing-date-sort="1605049200000" data-listing-file-modified-sort="1728284328572" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1508">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external">A more intuitive approach to effect sizes - Persons as effect sizes</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research methods'); return false;">
-research methods
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external">A tutorial on using persons as effect sizes</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2020
-</div>
-<div class="listing-reading-time">
-8 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="conferences,open science" data-listing-date-sort="1571868000000" data-listing-file-modified-sort="1727787520353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="419">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external">First mini open science fair at Vrije Universiteit Brussel</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('conferences'); return false;">
-conferences
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('open science'); return false;">
-open science
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external">Some reflections on the first mini open science fair at the Vrije Universiteit Brussel.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external">
-<div class="listing-date">
-Oct 24, 2019
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="conferences,open science,research methods" data-listing-date-sort="1563141600000" data-listing-file-modified-sort="1727783297444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1029">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external">Why do we all use the same methods in Work and Organizational Psychology?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('conferences'); return false;">
-conferences
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('open science'); return false;">
-open science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('research methods'); return false;">
-research methods
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external">A reflection on the different methods used in our field</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external">
-<div class="listing-date">
-Jul 15, 2019
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tim Vantilborgh </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 5, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Conducting a power analysis can be difficult because you need a good estimate of the effect size that you want to be able to detect given a certain sample size and alpha level. Obtaining realistic estimates of effect sizes can be difficult when there is no prior research that looked at the same effect using a similar analytical approach. This issue becomes even more complex when you plan to use a more complicated analytical approach. Various tools exist when you want to estimate power for basic statistical techniques, such as regression or ANOVA, but when you are using more complicated techniques such as multilevel or structural equation models it becomes more difficult.</p>
+<p>Alternative approaches exist (e.g., Smallest Effect Size Of Interest - see <a href="https://journals.sagepub.com/doi/full/10.1177/1948550617697177">Lakens, 2017</a> or sequential analysis - see <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ejsp.2023?casa_token=rCmbFzUtawMAAAAA%3ABdFZNurl32u-Wn203vjeyDkmpmJCf87BYf5eyu-YuJNNME7lJnsblRrDjZKgbLDrUYVHrN2F9jt8Ug8">Lakens, 2014</a>) and you can always use simulation to estimate power (see <a href="https://psycnet.apa.org/record/2018-48374-001">Arend &amp; Schäfer</a>). However, these alternatives are not necessarily easy to implement. I was therefore intrigued when I read a new article by <a href="https://journals.sagepub.com/doi/abs/10.1177/0149206319886909">Bliese &amp; Wang (2020)</a> published in Journal of Management.</p>
+<p>In this article, they explain how you can easily estimate post-hoc power by calculating the cumulative probability of finding significance. In essence, this cumulative probability tells you the probability of finding significant effects given the characteristics of your sample and model. The cumulative probability can be obtained in various ways:</p>
+<ol type="1">
+<li>You can use non-parametric bootstrapping and record for each bootstrap whether an effect was significant (1) or not (0), after which you calculate the percentage of significant effects accross all bootstrapped samples.</li>
+<li>You can take the <em>t</em> or <em>z</em> value of your test, and calculate the cumulative probability directly. The formula for the <em>t</em> value is best used when sample sizes are small, but with samples of 100 observations or more you can use the formula for the <em>z</em> value. In R, this formula based on the <em>z</em> value is simply:</li>
+</ol>
+<pre><code>1-pnorm(1.96-abs(X))</code></pre>
+<p>with X being the <em>t</em> or <em>z</em> value that is associated with your effect.</p>
+<p>Bliese and Wang (2020) demonstrate how to use this approach in R, but this approach can be used with any type of analysis or software. To try it out for myself, I ran a simple structural equation model in Mplus. I use a dataset that contains 226 observations of 15 variables (the data and the scripts can be downloaded from <a href="https://osf.io/njuw6/">OSF</a> in the folder 210105 Post-hoc power analysis):</p>
+<ul>
+<li>Items 1 and 2 measure psychological contract fulfilment</li>
+<li>Items 3 tot 6 measure feelings of violation</li>
+<li>Items 7 to 15 measure trust</li>
+</ul>
+<p>I then estimated a structural equation model using the following code (see example.inp):</p>
+<pre><code>TITLE: Demonstration post-hoc power
+
+DATA:
+FILE = "dataset.txt";
+
+VARIABLE:
+NAMES = fulf1 fulf2 viol1 viol2 viol3 viol4 
+trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
+USEV = fulf1 fulf2 viol1 viol2 viol3 viol4 trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
+
+ANALYSIS:
+
+MODEL:
+fulfilment by fulf1 fulf2;
+violation by viol1 viol2 viol3 viol4;
+trust by trust1 trust2 trust3 trust4 trust5 trust6 trust7 trust8 trust9;
+
+trust on violation fulfilment;
+violation on fulfilment;
+
+OUTPUT:
+sampstat;</code></pre>
+<p>If you are familiar with Mplus, you will notice that this is a mediation model with three latent variables. The output file gives a lot of information (see example.out), but I will jump to what is probably the most important section, namely the effects of fulfilment on feelings of violation and trust and the effect of feelings of violation on trust.</p>
+<pre><code>TRUST    ON
+    VIOLATION          0.397      0.208      1.912      0.056
+    FULFILMENT        -0.155      0.155     -1.005      0.315
+
+ VIOLATIO ON
+    FULFILMENT        -0.260      0.053     -4.869      0.000</code></pre>
+<p>The first number in each line is the parameter estimate, the second number is the standard error, the third number of the ratio of the parameter estimate and the standard error (i.e., a <em>z</em> value), and the final number is the <em>p</em>-value. We will take these <em>z</em> values and use them in our formula (see R script example.R):</p>
+<pre><code>1-pnorm(1.96-abs(1.912)) # Cumulative probability of violation on trust
+1-pnorm(1.96-abs(-1.005)) # Cumulative probability of fulfilment on trust
+1-pnorm(1.96-abs(-4.869)) # Cumulative probability of fulfilment on violation</code></pre>
+<p>We would find the following results:</p>
+<ul>
+<li>The cumulative probability of the effect of feelings of violation on trust is .48. This would mean that there is a lot of uncertainty about this effect, which is no surprise as the <em>p</em>-value is just over .05. It would suggest that there is only 48% chance of finding a significant effect, given the characteristics of our sample and our model. Put differently, we have a power of 48% to find a significant effect, given our sample properties and model.</li>
+<li>The cumulative probability of the effect of fulfilment on trust is .17. This suggests that finding a significant effect with a similar sample and model is very low. Put differently, we have a power of 17% to find a significant effect, given our sample properties and model.</li>
+<li>The cumulative probability of fulfilment of violation is .998. The likelihood that we can replicate this effect, given the characteristics of our sample and model is extremely high. Put differently, we have a power of .998% to find a significant effect, given our sample properties and model.</li>
+</ul>
+<p>Now I know that post-hoc power analysis is a debated topic. But I think that this approach can be useful in some cases. Bliese and Wang mention several advantages of routinely reporting the cumulative probability. I think that an extra advantage is that you could use this approach if reviewers ask you to report a post-hoc power analysis (which is a question that I have received regularly in the past couple of years).</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -807,6 +633,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="timvantilborgh/blogComments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 

@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Tim Vantilborgh">
+<meta name="dcterms.date" content="2020-11-11">
+<meta name="description" content="A summary of our report on working from home during the COVID-19 pandemic">
 
-<title>Prof.&nbsp;Tim Vantilborgh</title>
+<title>Prof.&nbsp;Tim Vantilborgh - Working from home during COVID-19 - Challenges and recommendations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +81,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Prof.&nbsp;Tim Vantilborgh</span>
     </a>
   </div>
@@ -149,11 +92,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./evidens.html"> 
+    <a class="nav-link" href="../../evidens.html"> 
 <span class="menu-text">e.videns</span></a>
   </li>  
   <li class="nav-item compact">
@@ -174,231 +117,100 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="conferences">conferences <span class="quarto-category-count">(2)</span></div><div class="category" data-category="covid-19">covid-19 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="evidence-based management">evidence-based management <span class="quarto-category-count">(1)</span></div><div class="category" data-category="open science">open science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="presentations">presentations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="research methods">research methods <span class="quarto-category-count">(3)</span></div></div></div>
-<!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#working-from-home-or-living-at-work" id="toc-working-from-home-or-living-at-work" class="nav-link active" data-scroll-target="#working-from-home-or-living-at-work">Working from home or living at work?</a></li>
+  </ul>
+</nav>
     </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Working from home during COVID-19 - Challenges and recommendations</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">covid-19</div>
+    <div class="quarto-category">evidence-based management</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    A summary of our report on working from home during the COVID-19 pandemic
+  </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="research methods" data-listing-date-sort="1609801200000" data-listing-file-modified-sort="1728284627681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="975">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external">Post-hoc power analysis using cumulative probabilities of finding significance</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research methods'); return false;">
-research methods
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external">A short tutorial on post-hoc power analysis</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/210105-post-hoc-power/210105-post.html" class="no-external">
-<div class="listing-date">
-Jan 5, 2021
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="presentations" data-listing-date-sort="1607986800000" data-listing-file-modified-sort="1728284472427" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external">A VUB theme for xaringan presentations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('presentations'); return false;">
-presentations
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external">For those who would like to create Xaringan slides with a VUB theme</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/201215-VUB-theme-xaringan/201215-post.html" class="no-external">
-<div class="listing-date">
-Dec 15, 2020
-</div>
-<div class="listing-reading-time">
-1 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="covid-19,evidence-based management" data-listing-date-sort="1605049200000" data-listing-file-modified-sort="1728284155138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1032">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external">Working from home during COVID-19 - Challenges and recommendations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('covid-19'); return false;">
-covid-19
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('evidence-based management'); return false;">
-evidence-based management
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external">A summary of our report on working from home during the COVID-19 pandemic</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/201111-working-from-home-covid/201111-post.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2020
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="research methods" data-listing-date-sort="1605049200000" data-listing-file-modified-sort="1728284328572" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1508">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external">A more intuitive approach to effect sizes - Persons as effect sizes</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research methods'); return false;">
-research methods
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external">A tutorial on using persons as effect sizes</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/201201-persons-as-effect-sizes/201201-post.html" class="no-external">
-<div class="listing-date">
-Nov 11, 2020
-</div>
-<div class="listing-reading-time">
-8 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="conferences,open science" data-listing-date-sort="1571868000000" data-listing-file-modified-sort="1727787520353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="419">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external">First mini open science fair at Vrije Universiteit Brussel</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('conferences'); return false;">
-conferences
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('open science'); return false;">
-open science
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external">Some reflections on the first mini open science fair at the Vrije Universiteit Brussel.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/191024-mini-open-science-fair/191024-post.html" class="no-external">
-<div class="listing-date">
-Oct 24, 2019
-</div>
-<div class="listing-reading-time">
-3 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="conferences,open science,research methods" data-listing-date-sort="1563141600000" data-listing-file-modified-sort="1727783297444" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1029">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external">Why do we all use the same methods in Work and Organizational Psychology?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('conferences'); return false;">
-conferences
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('open science'); return false;">
-open science
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('research methods'); return false;">
-research methods
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external">A reflection on the different methods used in our field</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/190715-substantive-methodological-fit/190715-post.html" class="no-external">
-<div class="listing-date">
-Jul 15, 2019
-</div>
-<div class="listing-reading-time">
-6 min
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tim Vantilborgh </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 11, 2020</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This is a summary of the full report, which can be downloaded from: <a href="https://osf.io/9nxqv/">https://osf.io/9nxqv/</a></p>
+<p>Late October 2020, working from home became the norm again in Belgium to contain the spread of COVID-19. However, these measures require far-reaching efforts from both employees and employers and may have an impact on an individual, organizational and societal level. To sustain these measures, we need to look beyond the economic and health parameters. Work - and organizational psychological insights can help us to understand the challenges associated with working from home and inform evidence-based management practices.</p>
+<section id="working-from-home-or-living-at-work" class="level1">
+<h1>Working from home or living at work?</h1>
+<p>Since measures were imposed to manage the COVID-19 crisis, the number of Belgian employees working remotely at least one day a week increased from 16.9% to 62%. This constitutes a dramatic and sudden shift, where employees and employers who had no prior experience with remote working were suddenly forced to transition to virtual means of collaborating. The scientific literature shows that occasionally working from home can bestow several positive benefits to employees, such as a higher degree of autonomy, less work-family conflict, higher job satisfaction and performance, lower levels of stress, and a lower likelihood to quit their job.</p>
+<p>However, these benefits were observed when employees combined working from home with working at the office. This is in stark contrast with the situation today, as many employees are now working fulltime from home and as this remote work is mandated rather than a voluntary choice. As a result, employees may not experience the positive benefits mentioned above. While some studies show that certain groups of employees still experienced benefits from working from home during a lockdown, there is also a body of literature that suggests that there are various negative consequences such as:</p>
+<ol type="1">
+<li>An increase in work-family conflict because of work and family roles impeding each other</li>
+<li>Less opportunities to detach and recover from work because of blurring boundaries between work and other life domains</li>
+<li>Working longer hours, skipping breaks and an increase in virtual meetings resulting in an intensification of work, less time to recover and feelings of exhaustion.</li>
+<li>Feelings of isolation, loneliness and decreased sense of connection due to the lack of social interaction</li>
+<li>A decrease in intrinsic motivation due to limited possibilities to fulfill the basic needs of employees (autonomy, connectedness and competence).</li>
+<li>Difficulties with performing tasks due to the extra time to coordinate and reorganize work, manage uncertainties, gather information and lack of necessary work resources.</li>
+<li>Lack of communication and thus ambiguous expectations</li>
+<li>Difficulties communicating with and managing virtual teams as they require a different approach: transparent and clear communication, trust, moving away from micro-management and excessive control.</li>
+</ol>
+<p>The above challenges require quite a lot from employers and employees. However, various actions can be taken to meet these challenges. Recommendations for employees:</p>
+<ol type="1">
+<li>If the epidemiological context allows it, it is recommended to find an optimal balance between working from home and working from the office. Two days of remote work per week are often recommended.</li>
+<li>Try to actively seek recovery from work. Research suggests that it can beneficial for recovery to actively invest time into finding an activity outside normal work (e.g., online workout classes, walking, social hours on video chat) that can help you to unwind from work.</li>
+<li>Structure your workday. Set a clear place and time for working from home, and use rituals to signal the start and the end of the workday. Don’t forget to include breaks in your work schedule.</li>
+</ol>
+<p>Recommendations for organizations and managers:</p>
+<ol start="4" type="1">
+<li>Managers need to use compassionate and family-supportive leadership. This means that managers need to show empathy, attentive communication, a communal orientation, and vision-oriented leadership. Supervisors need to listen to employees’ concerns and acknowledge that each employee may be facing a uniquely different and difficult situation right now.</li>
+<li>Organizations and managers need to clearly communicate what is expected from employees during this crisis. Essentially, this means that organizations need to fulfil the requirement listed in CAO85 to develop a formal telework policy, including a clear description about what to expect from teleworkers, e.g.&nbsp;in terms of accessibility and availability and means of communication.</li>
+<li>Help employees in structuring their workday and creating a good office environment at home. Avoid creating the impression that employees should always be available. Be aware that many employees do not have a dedicated, equipped workspace at home. When employees lack a good office environment at home, organizations should facilitate setting up such a space by providing (the means to buy) office equipment such as an ergonomic chair, keyboard, stable internet connection, etcetera (e.g., by allowing employees to use these materials from the office).</li>
+<li>Use virtual communication tools to keep in touch with coworkers. Stay connected to each other by using virtual tools for informal get-togethers (e.g., a digital coffee break). Start or end formal virtual meetings by checking in on how everyone is doing. However, be aware that it is also important to not create additional obligations when employees are already strained (e.g., when they have kids at home). It is thus important to carefully balance the need for social interaction with overall workload.</li>
+<li>Show empathy and trust employees. Constantly controlling and monitoring remote workers undermines their sense of autonomy and reduces their wellbeing. Offer structure and support, provide clear goals, and try to regularly check-in on employees to see how they are doing. Make sure to create a psychologically safe environment, where employees feel at ease to share problems and concerns with supervisors or other staff members.</li>
+<li>Allow for flexibility and offer support. Be attentive to the unique needs of remote workers. Employees need to feel supported, meaning that the organization should demonstrate that they value their contributions and cares about their wellbeing.</li>
+<li>Offer training opportunities. Employees need to master new virtual communication and collaboration tools, which can cause stress. Organizations can reduce this stress by offering courses or workshops on how to use these new tools. Likewise, managing virtual teams can be a daunting task for supervisors. Training courses can help them to adjust their communication strategy and management style.</li>
+</ol>
+<p>Authors: Prof.&nbsp;Tim Vantilborgh (lead author; VUB), Eva De Winter (VOCAP), Prof.&nbsp;Donatienne Desmette (UCL), Prof.&nbsp;Jonas Lang (UGent), Prof.&nbsp;Florence Stinglhamber (UCL), Prof.&nbsp;Anja Van den Broeck (KULeuven), Prof.&nbsp;Marijke Verbruggen (KULeuven)</p>
+<p>Supported by the Belgian Association of Psychological Sciences (BAPS), Vereniging voor Organisatie-, Consumenten, en Arbeidspsychologie (VOCAP), and the expert group on Corona and Psychology</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -807,6 +619,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="timvantilborgh/blogComments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
